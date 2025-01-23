@@ -1,26 +1,9 @@
 {
-	"name": "magicmirror",
+	"name": "smartmirror",
 	"version": "2.29.0",
 	"description": "The open source modular smart mirror platform.",
 	"keywords": [
-		"magic mirror",
-		"magicmirror",
-		"smart mirror",
-		"mirror UI",
-		"modular"
-	],
-	"homepage": "https://magicmirror.builders",
-	"bugs": {
-		"url": "https://github.com/MagicMirrorOrg/MagicMirror/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/MagicMirrorOrg/MagicMirror"
-	},
-	"license": "MIT",
-	"author": "Michael Teeuw",
-	"contributors": [
-		"https://github.com/MagicMirrorOrg/MagicMirror/graphs/contributors"
+		"smart mirror"
 	],
 	"main": "js/electron.js",
 	"scripts": {
@@ -31,7 +14,7 @@
 		"install-mm:dev": "npm install --no-audit --no-fund --no-update-notifier",
 		"install-vendor": "echo \"Installing vendor files ...\n\" && cd vendor && npm install --loglevel=error --no-audit --no-fund --no-update-notifier",
 		"install-fonts": "echo \"Installing fonts ...\n\" && cd fonts && npm install --loglevel=error --no-audit --no-fund --no-update-notifier",
-		"postinstall": "npm run install-vendor && npm run install-fonts && echo \"MagicMirror² installation finished successfully! \n\"",
+		"postinstall": "npm run install-vendor && npm run install-fonts && echo \"SmartMirror installation finished successfully! \n\"",
 		"test": "NODE_ENV=test jest -i --forceExit",
 		"test:coverage": "NODE_ENV=test jest --coverage -i --verbose false --forceExit",
 		"test:electron": "NODE_ENV=test jest --selectProjects electron -i --forceExit",
