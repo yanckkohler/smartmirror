@@ -13,7 +13,7 @@ const { getEnvVarsAsObj } = require(`${__dirname}/server_functions`);
 
 // Get version number.
 global.version = require(`${__dirname}/../package.json`).version;
-Log.log(`Starting MagicMirror: v${global.version}`);
+Log.log(`Starting SmartMirror: v${global.version}`);
 
 // Log system information.
 Utils.logSystemInformation();
@@ -25,8 +25,6 @@ if (process.env.MM_CONFIG_FILE) {
 	global.configuration_file = process.env.MM_CONFIG_FILE.replace(`${global.root_path}/`, "");
 }
 
-// FIXME: Hotfix Pull Request
-// https://github.com/MagicMirrorOrg/MagicMirror/pull/673
 if (process.env.MM_PORT) {
 	global.mmPort = process.env.MM_PORT;
 }
@@ -38,8 +36,7 @@ process.on("uncaughtException", function (err) {
 	if (!err.stack.includes("node_modules/systeminformation")) {
 		Log.error("Whoops! There was an uncaught exception...");
 		Log.error(err);
-		Log.error("MagicMirror² will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?");
-		Log.error("If you think this really is an issue, please open an issue on GitHub: https://github.com/MagicMirrorOrg/MagicMirror/issues");
+		Log.error("SmartMirror will not quit, but it might be a good idea to check why this happened. Maybe no internet connection?");
 	}
 });
 
@@ -64,8 +61,6 @@ function App () {
 			defaults.address = "0.0.0.0";
 		}
 
-		// For this check proposed to TestSuite
-		// https://forum.magicmirror.builders/topic/1456/test-suite-for-magicmirror/8
 		const configFilename = path.resolve(global.configuration_file || `${global.root_path}/config/config.js`);
 		let templateFile = `${configFilename}.template`;
 
@@ -201,7 +196,7 @@ function App () {
 			let m = new Module();
 
 			if (m.requiresVersion) {
-				Log.log(`Check MagicMirror² version for node helper '${moduleName}' - Minimum version: ${m.requiresVersion} - Current version: ${global.version}`);
+				Log.log(`Check SmartMirror version for node helper '${moduleName}' - Minimum version: ${m.requiresVersion} - Current version: ${global.version}`);
 				if (cmpVersions(global.version, m.requiresVersion) >= 0) {
 					Log.log("Version is ok!");
 				} else {

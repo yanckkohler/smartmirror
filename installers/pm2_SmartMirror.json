@@ -1,0 +1,7 @@
+{
+  "apps" : [{
+    "name"        : "SmartMirror",
+    "script"      : "/PATH_TO_YOUR_DIRECTORY/installers/mm.sh",
+    "watch"       : ["/PATH_TO_YOUR_DIRECTORY/config/config.js"]
+  }]
+}

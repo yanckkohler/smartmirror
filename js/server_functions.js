@@ -69,7 +69,7 @@ async function cors (req, res) {
  * @returns {object} An object specifying name and value of the headers.
  */
 function getHeadersToSend (url) {
-	const headersToSend = { "User-Agent": `Mozilla/5.0 MagicMirror/${global.version}` };
+	const headersToSend = { "User-Agent": `Mozilla/5.0 SmartMirror/${global.version}` };
 	const headersToSendMatch = new RegExp("sendheaders=(.+?)(&|$)", "g").exec(url);
 	if (headersToSendMatch) {
 		const headers = headersToSendMatch[1].split(",");
@@ -102,7 +102,7 @@ function geExpectedReceivedHeaders (url) {
 }
 
 /**
- * Gets the HTML to display the magic mirror.
+ * Gets the HTML to display the SmartMirror.
  * @param {Request} req - the request
  * @param {Response} res - the result
  */
@@ -120,7 +120,7 @@ function getHtml (req, res) {
 }
 
 /**
- * Gets the MagicMirror version.
+ * Gets the version.
  * @param {Request} req - the request
  * @param {Response} res - the result
  */

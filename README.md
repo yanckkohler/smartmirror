@@ -1,18 +1,17 @@
+**SmartMirror** is a modular open source platform for smart mirrors. **SmartMirror** allows you to turn your hallway or bathroom mirror into your personal assistant.
 
-**SmartMirror** is an open source modular smart mirror platform. With a growing list of installable modules, the **SmartMirror** allows you to convert your hallway or bathroom mirror into your personal assistant. **SmartMirror** is built by the creator of [the original MagicMirror](https://michaelteeuw.nl/tagged/magicmirror).
+SmartMirror relies on a modular plugin system and uses [Electron](https://www.electronjs.org/) as an application wrapper. This means that no further web server or browser installations are necessary!
 
-SmartMirror focuses on a modular plugin system and uses [Electron](https://www.electronjs.org/) as an application wrapper. So no more web server or browser installs necessary!
+## Documentation & instructions
 
-## Documentation
+For the complete documentation including an application guide, please refer to the PDF in the repository.
 
-For the full documentation including **[installation instructions](https://docs.magicmirror.builders/getting-started/installation.html)**, please visit our dedicated documentation website: [https://docs.magicmirror.builders](https://docs.magicmirror.builders).
+## Contributions
 
-## Contributing Guidelines
-
-Contributions of all kinds are welcome, not only in the form of code but also with regards to
+Contributions of all kinds are welcome, not only in the form of code, but also in the form of
 
 - bug reports
 - documentation
 - translations
 
-To contact us, please send an email to yanick.kohler@bbzsogr.ch
+To contact us, please send an email to yanick.kohler@bbzsogr.com

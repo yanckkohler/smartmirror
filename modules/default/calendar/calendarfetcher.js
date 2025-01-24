@@ -32,7 +32,7 @@ const CalendarFetcher = function (url, reloadInterval, excludedEvents, maximumEn
 		const nodeVersion = Number(process.version.match(/^v(\d+\.\d+)/)[1]);
 		let httpsAgent = null;
 		let headers = {
-			"User-Agent": `Mozilla/5.0 (Node.js ${nodeVersion}) MagicMirror/${global.version}`
+			"User-Agent": `Mozilla/5.0 (Node.js ${nodeVersion}) SmartMirror/${global.version}`
 		};
 
 		if (selfSignedCert) {
