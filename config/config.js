@@ -36,7 +36,7 @@ let config = {
 		},
 		{
 			module: "calendar",
-			header: "Meine Termine",
+			header: "calendar",
 			position: "top_left",
 			config: {
 				calendars: [
@@ -61,7 +61,7 @@ let config = {
 		{
 			module: "weather",
 			position: "top_right",
-			header: "Wetter",
+			header: "weather",
 			config: {
 				weatherProvider: "openmeteo",
 				type: "forecast",
